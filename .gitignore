@@ -38,5 +38,5 @@ node_modules
 
 #Hardhat filess
 cache
-artifacts
+#artifacts
 .secret
