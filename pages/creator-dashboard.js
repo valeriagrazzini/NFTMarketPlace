@@ -3,10 +3,9 @@ import { useEffect, useState } from 'react'
 import Web3Modal from 'web3modal'
 import {create as ipfsHttpClient} from 'ipfs-http-client'
 import axios from 'axios'
+import { nftAddress, nftMarketAddress, ipfsProvider } from '../config'
 
-const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
-
-import { nftAddress, nftMarketAddress } from '../config'
+const client = ipfsHttpClient(ipfsProvider)
 
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 import NFTMarket from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
